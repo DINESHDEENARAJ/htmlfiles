@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY-BASIC JS</title>
+</head>
+<body>
+    <script>
+        var datas=["dinesh",111,true]
+        document.writeln(datas)
+
+        let datas1=new Array();
+        datas1.push("deena")
+        datas1.push(222)
+        datas1.push(true)
+        datas1.push("d")
+        datas1.push(7.07)
+        document.writeln(datas1)
+
+        // const datas1=new Array();
+        // datas1.push("deena")
+        // datas1.push(222)
+        // datas1.push(true)
+        // datas1.push("d")
+        // datas1.push(7.07)
+        // document.writeln(datas1)
+        
+ let print=(data)=>
+ {
+    alert(data)
+ }
+datas1.map(print)
+
+//pop mean as delete .for last la irunthu delete seiyum.
+
+datas1.pop()
+datas1.pop()
+document.writeln(datas1)
+
+
+//for loop has to inspect click,to console box check.
+
+ for(i=0;i<datas1.length;i++)
+ {
+     console.log(datas1[i])
+ }
+
+
+let newone=prompt("tell us position to delete")
+datas1=datas1.filter((data,pos)=>
+{
+    return data!==datas1[newone];
+})
+
+datas1.map((data)=>
+{
+    document.writeln('<b>'+data+"</b>")
+}
+)
+
+    </script>
+</body>
+</html>

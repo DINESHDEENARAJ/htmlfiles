@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> CREATE A FUNCTION  </title>
+        <script>
+            function process()
+            {
+                //var-variable              process=class name;
+
+                var sample=document.getElementsByTagName('li')[2];
+                sample.style.color='red';
+                sample.style.borderStyle='double';
+
+                // let temp=document.getElementById('basic');
+                // temp.style.color='blue';
+                // temp.style.textTransform='lowercase';
+            }
+        </script>
+    </head>
+    <body>
+        <h2>BASIC FUNCTION CREATE</h2>
+        
+        <OL onclick="process()">web frameworks
+            <li>spring</li>
+            <li>hypernet</li>
+            <li>vue</li>
+          <br>
+          <!-- caps la BS irukurathu small ha  converting seirathu -->
+            <li id="basic" >BS</li>
+            <li>Angular js</li>
+            <li>node js</li>
+            <li>react js</li>
+            <li>mangodp</li>
+        
+        </OL>
+    </body>
+    </html>
